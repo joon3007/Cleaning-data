@@ -12,7 +12,7 @@ This code book describes the resulting data fields in tidy_data.csv.
   * <code>LAYING</code>
   
 ## Activity Variable
-tidy_data.csv use abbreviation. because long variable names are uncomfortable to use.
+tidy_data.csv uses abbreviations for column names. because long variable names are uncomfortable to use.
   ### abbreviation
   * <code>t</code> - timeDomain
   * <code>f</code> - frequencyDomain
