@@ -29,7 +29,7 @@ activity <- cbind(rbind(train_subject,test_subject),
 
 colnames(activity) <- c("subject","activity",features[,2])
 
-#Delete uselss variable 
+#Delete useless variable 
 rm(train_subject, train_X,train_y)
 rm(test_subject, test_X, test_y)
 
