@@ -57,6 +57,6 @@ tidy_data <- activity %>%
                         summarise_each(funs(mean))
 
 #Write tidy data with csv extension.
-write.table(tidy_data, "tidy_data.csv", row.names = FALSE, 
+write.table(tidy_data, "tidy_data.txt", row.names = FALSE, 
             quote = FALSE)
 

@@ -1,5 +1,5 @@
 # Project CodeBook
-This code book describes the resulting data fields in tidy_data.csv.
+This code book describes the resulting data fields in tidy_data.txt.
 
 ## Identifiers
 * <code>subject</code> : Each number identifies the subject who performed the activity. (Its range is from 1 to 30.)
@@ -12,7 +12,7 @@ This code book describes the resulting data fields in tidy_data.csv.
   * <code>LAYING</code>
   
 ## Activity Variable
-tidy_data.csv uses abbreviations for column names. because long variable names are uncomfortable to use.
+tidy_data.txt uses abbreviations for column names. because long variable names are uncomfortable to use.
   ### abbreviation
   * <code>t</code> - timeDomain
   * <code>f</code> - frequencyDomain
