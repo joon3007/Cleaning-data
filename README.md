@@ -7,14 +7,14 @@ This repository contains the following files:
 
 * <code>README.md</code>, this file, which provides an overview of the data set and how it was created.
 * <code>tidy_data.csv</code>, which contains the data set.
-* <code>CodeBook.md</code>, the code book, which describes the contents of the data set (data, variables and transformations used to generate the data).
-* <code>run_analysis.R</code>, the R script that was used to create the data set (see the Creating the data set section below)
+* <code>CodeBook.md</code>, the code book, which describes the contents of the data set.
+* <code>run_analysis.R</code>, the R script that was used to create the data set.
 
 ## Requirment
 * R version : 3.6.2
 * run_analysis.R file require <code>dplyr</code> package.
 
-## Courese Projcet
+## Projcet Sequence
 There is just one script called run_analysis.R. It contains all functions and code to do the following:
 
 1. Merges the training and the test sets to create one data set.
