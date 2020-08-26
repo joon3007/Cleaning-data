@@ -36,10 +36,10 @@ rm(test_subject, test_X, test_y)
 
 #Extracts only the measurements on the mean and standard deviation for each measurement.
 activity <- activity %>%
-        select(matches("subject|label|mean|std",ignore.case = FALSE))%>%
+        select(matches("subject|activity|mean|std",ignore.case = FALSE))%>%
         #ignore.case = FALSE : only select literally word(not uppercase)
         #Uses descriptive activity names to name the activities in the data set
-        mutate(label = activity_label[,2][label])
+        mutate(activity = activity_label[,2][activity])
 
 
 #Appropriately labels the data set with descriptive variable names.
@@ -51,10 +51,9 @@ activity_cals <- gsub("BodyBody", "Body", activity_cals)
 
 colnames(activity) <- activity_cals
 
-
 #Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidy_data <- activity %>%
-                group_by(subject, label)%>%
+                group_by(subject, activity)%>%
                         summarise_each(funs(mean))
 
 #Write tidy data with csv extension.
