@@ -27,7 +27,7 @@ activity <- cbind(rbind(train_subject,test_subject),
               rbind(train_y,test_y),
               rbind(train_X,test_X))
 
-colnames(activity) <- c("subject","label",features[,2])
+colnames(activity) <- c("subject","activity",features[,2])
 
 #Delete uselss variable 
 rm(train_subject, train_X,train_y)
@@ -43,9 +43,12 @@ activity <- activity %>%
 
 
 #Appropriately labels the data set with descriptive variable names.
-# remove Parenthesis and minus Characters
 activity_cals <- colnames(activity)
 activity_cals <- gsub("[\\(\\)-]","",activity_cals)
+activity_cals <- gsub("mean", "Mean", activity_cals)
+activity_cals <- gsub("std", "Std", activity_cals)
+activity_cals <- gsub("BodyBody", "Body", activity_cals)
+
 colnames(activity) <- activity_cals
 
 
@@ -57,3 +60,4 @@ tidy_data <- activity %>%
 #Write tidy data with csv extension.
 write.table(tidy_data, "tidy_data.csv", row.names = FALSE, 
             quote = FALSE)
+
