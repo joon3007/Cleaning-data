@@ -24,6 +24,4 @@ There is just one script called run_analysis.R. It contains all functions and co
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # Result
-The output of the R script is a tidy data set, tidy_data.csv. 
-
-You can read more about the data and the analysis in the [code book](https://github.com/joon3007/Cleaning-data/blob/master/CodeBook.md).
+The output of the R script is a tidy data set, tidy_data.csv. <br>You can read more about the data and the analysis in the [code book](https://github.com/joon3007/Cleaning-data/blob/master/CodeBook.md).
